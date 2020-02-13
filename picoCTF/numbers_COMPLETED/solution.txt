@@ -1,0 +1,6 @@
+this is a cryptography challenge involving letters of the english alphabet encoded as numbers 
+by their position in the alphabet.
+I didnt need to write a script i just used the python cli to input and generate the flag.
+i used the string built in module 
+and used string.ascii_lower
+
