@@ -1,0 +1,2 @@
+this challenge involved converting a decimal digit to binary
+
