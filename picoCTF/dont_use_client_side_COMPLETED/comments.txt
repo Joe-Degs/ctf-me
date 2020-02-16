@@ -1,0 +1,2 @@
+This challenge was about a client side authentication form that had the password in it.
+I just looked at the page source and extracted the password.

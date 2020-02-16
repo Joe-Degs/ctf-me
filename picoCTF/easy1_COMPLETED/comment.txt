@@ -1,0 +1,4 @@
+This is a vignere cipher challenge, took some time to realise it though lol.
+the key is `SOLVECRYPTO` and the text `UFJKXQZQUNB`.
+i spent some good amount of time googling before i realised it was something called a vigniere cipher.
+you could get the flag using the `table.txt` in the directory or as i did some online decoder.
