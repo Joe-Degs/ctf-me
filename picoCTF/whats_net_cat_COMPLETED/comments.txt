@@ -1,0 +1,1 @@
+This challenge involved conecting to the server 2019shell1.picoctf.com on port 49816 using netcat

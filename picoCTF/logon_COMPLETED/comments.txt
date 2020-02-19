@@ -1,0 +1,2 @@
+This challenge involved exploiting vulnerablities inn cookies.
+This login page had a cookie `Admin=False` is changed to true returns the flag.

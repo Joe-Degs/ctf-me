@@ -1,0 +1,5 @@
+robots.txt files prevent webcrawlers from having access to contents specified in them.
+It is used in serverside programs to prevent search engine bots from having access to certain file
+on the server.
+I opened this file found a link, navigated to the link and found the flag. :)
+
