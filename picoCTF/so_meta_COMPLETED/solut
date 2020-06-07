@@ -1,0 +1,6 @@
+This challenge involved trying to get the metadata of an image file.
+
+so i just cat the file and pipe through strings to get the string metadata on the file.
+
+the flag was "picoCTF{s0_m3ta_3d6ced35}". Ohh the days i used to watch john hammond on youtube crack ctfs.
+Take me back to those days my nigga.

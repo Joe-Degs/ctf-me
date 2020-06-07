@@ -1,0 +1,5 @@
+The flag for this challenge was hidden with obfuscation.
+Obfuscation is hidding useful info by mixing it with meaningless data or encryption.
+
+Read the page source, the flag lies there.
+Always read the source my gee, even though sometimes its fruitless.

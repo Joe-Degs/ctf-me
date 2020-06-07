@@ -1,0 +1,8 @@
+This was amazing exercise, solved it without looking up any writeups
+It was amazing hahaaa LOL
+
+it was a simple one to change the user-agent of the client making the request to the webserver to picobrowser.
+I achieved with curl after trying to do it fruitlessly with firefox
+
+the command was 
+	curl -H 'User-Agent':'picobrowser' https://whatever.web.com

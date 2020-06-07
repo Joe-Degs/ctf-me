@@ -1,0 +1,10 @@
+This particurlar challenge fucked for a few hours.
+That was because i was dumb, didnt know anything cookies.
+Looked online for a bit got bored and went to read the writeup, then i went to do the work. Feeling a lil bit guilty because thats cheating my gee.
+I thought the cookies was encoded so i started snooping around for encoded text to decode LOL.
+Finally i had to 
+ 
+	document.cookie="admin=True"
+	document.cookie="time=1400"
+
+to get the key. LOL what a nigga bitch i am.
