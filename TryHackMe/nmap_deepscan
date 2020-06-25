@@ -1,0 +1,7 @@
+# Nmap 7.70 scan initiated Wed Jun 24 20:28:00 2020 as: nmap -T5 -A -p- -sV -Pn -oN nmap_deepscan 10.10.241.138
+Warning: 10.10.241.138 giving up on port because retransmission cap hit (2).
+Nmap scan report for 10.10.241.138
+Host is up (0.22s latency).
+Skipping host 10.10.241.138 due to host timeout
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jun 24 20:43:02 2020 -- 1 IP address (1 host up) scanned in 902.00 seconds

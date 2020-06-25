@@ -1,0 +1,23 @@
+#! /usr/bin/env python3
+
+import socket
+import sys
+import fileinput
+
+ip = '10.10.148.30'
+
+if len(sys.argv) !=2:
+	print("Usage: <inputfile>")
+	sys.exit(0)
+
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+connect=s.connect((ip,110))
+banner=s.recv(1024)
+print(banner)
+
+for line in fileinput.input():
+	s.send('VRFY ' + line)
+	result=s.recv(1024)
+	print(result)
+
+s.close()
