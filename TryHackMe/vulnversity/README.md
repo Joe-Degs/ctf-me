@@ -4,7 +4,7 @@
 ### Task One - Deploy Machine
 
 ```
-export IP=10.10.130.163
+export IP=10.10.222.149
 ```
 
 ### Task Two - Reconnaissance
@@ -76,21 +76,23 @@ I got extension type that they like and thats `.phtml`. I am going to send a pht
 
 
 ### Priveledege Escalation
-okay the reverse shell is working as expected. but one more thing is exploiting the user priveleges to get a real shell this time around. I found a `/bin/systemctl` SUID on the system. But first i need a `.service` file which i am having a had time creating 
+- okay the reverse shell is working as expected. but one more thing is exploiting the user priveleges to get a real shell this time around. I found a `/bin/systemctl` SUID on the system. But first i need a `.service` file which i am having a had time creating.
 
+- After trying so hard to pwn this machine for 3 days straight i finally got to do it and it was fun. The answer was literally staring at me the whole time. I was just thinking too far to think of something to simple.
+So basically there was suid bit that could be executed to run root commands. I got this idea but actually wanted to get a stable shell before i go and read the `root.txt` file. So i tried writing `.phtml` scripts to go and create a `root.service` file that will send a stable reverse shell with a tty to my local machine(i used my ip). Tried it in different ways but it didn't work for me. A better way would have been to create a `.service` file to read the flag and output it. This came to me after 3 days of trying fruitlessly :).
 
+```
+TF=$(mktemp).service
+echo '[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "cat /root/root.txt > /tmp/output" 
+[Install]
+WantedBy=multi-user.target' > $TF
+/bin/systemctl link $TF
+/bin/systemctl enable --now $TF
+``` 
 
-
-
-
-
-
-
-
-
-
-
-##### NOTES
+### NOTES
 
 Looks like i have to learn how to use burpsuite as it is necessary for this challenge
 

