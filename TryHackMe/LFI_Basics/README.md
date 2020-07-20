@@ -92,3 +92,5 @@ lfi:x:1000:1000:THM,,,:/home/lfi:/bin/bash
 - Log poisoning from what i'm reading online is trying to get a reverse shell on the server by injecting malicious code into the server logs through lfi. [further-reading](https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1)
 
 - The room guide asks to fire up burpsuite and since I have not used it before, i'll just fire up python for this task. Doing a little script to send the request to the website and return the response html code.
+
+- Now i'm trying to do some apache log poisoning attack but i'm not quite getting it. I wrote the whole thing in a python script, piped the result into a result.txt `./burp_sub.py > result.txt`
